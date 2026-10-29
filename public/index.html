@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CocinaSmart · Planifica, cocina, compra</title>
+  <meta name="description" content="Decide qué cocinar y arma tu lista de compras en minutos con recetas reales, datos de productos y menús generados con IA.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍳%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div id="offline" class="offline" hidden role="status">Sin conexión: algunas funciones no estarán disponibles hasta que vuelvas a conectarte.</div>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/" aria-label="CocinaSmart, inicio"><span class="brand-ico">🍳</span> CocinaSmart</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#/" data-route="">Inicio</a>
+      <a href="#/recetas" data-route="recetas">Recetas</a>
+      <a href="#/despensa" data-route="despensa">Despensa</a>
+      <a href="#/planificador" data-route="planificador">Planificador</a>
+      <a href="#/compras" data-route="compras">Compras</a>
+      <a href="#/admin" data-route="admin" id="nav-admin" hidden>Admin</a>
+    </nav>
+    <a class="btn btn-green" href="#/cuenta" id="nav-account">Mi cuenta</a>
+  </header>
+  <main id="view" tabindex="-1" aria-live="polite"></main>
+  <footer class="footer">Datos: TheMealDB · Open Food Facts (ODbL) · Gemini API — Proyecto académico</footer>
+  <div id="toasts" class="toasts" aria-live="assertive"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
